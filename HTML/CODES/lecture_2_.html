@@ -1,0 +1,103 @@
+<!-- Emmet and Speedy HTML -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- tagname.classname creates <tagname class="classname"></tagname> -->
+    <div class="header"></div> <!-- Example of div.header -->
+    <section class="section"></section> <!-- Example of section.section -->
+
+
+
+    <!-- tagname#IDvalue creates <tagname id="IDvalue"></tagname> -->
+    <h2 id="id1"></h2> <!-- Example of h2#id1 -->
+    <h2 id="id42"></h2> <!-- Example of h2#id42 -->
+
+
+
+    <!-- Attribute addition: tagname[attribute=value] adds attributes -->
+    <p title="example"></p> <!-- Example of adding a title attribute -->
+
+
+
+    <!-- Parent > Child relationship: parent>child creates nested tags -->
+    <div>
+        <p>
+            <span>Nested example</span>
+        </p>
+    </div> <!-- Example of div>p>span -->
+
+
+
+    <!-- Multiplication: tagname*number creates multiple tags -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> <!-- Example of ul>li*5 -->
+
+
+
+    <!-- Sibling: tagname+tagname creates sibling tags -->
+    <h1></h1>
+    <h2></h2>
+    <h3></h3> <!-- Example of h1+h2+h3 -->
+
+
+
+    <!-- Grouping: (group)>child creates grouped structures -->
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <p>Footer text</p>
+        </footer>
+    </div> <!-- Example of (div>nav>ul>li>a)+footer -->
+
+
+
+    <!-- Implicit tag generation: Writing .classname or #id without a tag defaults to <div> -->
+    <div class="implicit-class"></div> <!-- Example of .classname -->
+    <div id="implicit-id"></div> <!-- Example of #id -->
+
+
+    
+    <!-- Shortcuts for common tags -->
+    <input type="text" placeholder="Enter text here"> <!-- input[type=text][placeholder="Enter text here"] -->
+    <img src="image.jpg" alt="Image description"> <!-- img[src="image.jpg"][alt="Image description"] -->
+
+
+
+    <!-- Repetition of elements for quick structuring -->
+    <div class="card">
+        <h2 class="card-title">Title</h2>
+        <p class="card-description">Description text</p>
+        <button class="card-button">Click Me</button>
+    </div> <!-- Example of div.card>h2.card-title+p.card-description+button.card-button -->
+
+
+
+    <!-- Example of sibling groups -->
+    <div class="container">
+        <h1>Main Heading</h1>
+        <h2>Subheading 1</h2>
+        <h2>Subheading 2</h2>
+        <h2>Subheading 3</h2>
+    </div> <!-- Example of div.container>h1+h2*3 -->
+
+    
+</body>
+</html>
