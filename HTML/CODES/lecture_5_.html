@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding Images, Videos, and Audio</title>
+</head>
+<body>
+    <h1>Embedding Images, Videos, and Audio in HTML</h1>
+    <p>This document demonstrates how to include images, videos, and audio files on a webpage, along with their attributes and alternate methods.</p>
+
+    <!-- IMAGE SECTION -->
+    <h2>Image Example</h2>
+    <!-- The <img> tag is used to display images. It is an inline element and does not require a closing tag. -->
+    <img 
+        src="https://wallpapers.com/images/hd/chibi-balloon-spiderman-bly29pc4e39npic5.webp" 
+        alt="Chibi Spiderman" 
+        height="400px" 
+        width="400px" 
+        title="Chibi Spiderman Image"
+    >
+    <!-- Attributes:
+         - src: Specifies the image source (URL or file path).
+         - alt: Provides alternative text for accessibility and when the image cannot be displayed.
+         - height & width: Define the dimensions of the image.
+         - title: Displays a tooltip when hovering over the image.
+    -->
+
+    <p><b>Alternate Way to Resize Images:</b> Use CSS for responsive styling:</p>
+    <style>
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    <img 
+        class="responsive-img" 
+        src="https://wallpapers.com/images/hd/chibi-balloon-spiderman-bly29pc4e39npic5.webp" 
+        alt="Chibi Spiderman (Responsive)" 
+        title="Responsive Image Example"
+    >
+
+    <hr>
+
+    <!-- VIDEO SECTION -->
+    <h2>Video Examples</h2>
+    <!-- The <video> tag is used to embed videos. It requires a closing tag. -->
+    <video 
+        src="https://videos.pexels.com/video-files/30290425/12984919_1920_1080_25fps.mp4" 
+        height="300px" 
+        width="500px" 
+        controls 
+        autoplay 
+        muted
+        loop 
+        title="Ferris Wheel Video">
+        Your browser does not support the <code>video</code> tag.
+    </video>
+    <!-- Attributes:
+         - src: Specifies the video source (URL or file path).
+         - height & width: Define the dimensions of the video player.
+         - controls: Displays play/pause buttons and other video controls.
+         - autoplay: Starts playing the video automatically.
+         - muted: Mutes the video by default.
+         - loop: Repeats the video in a loop.
+         - title: Provides additional information when hovering over the video.
+    -->
+
+    <p><b>Alternate Way to Include Multiple Video Sources:</b></p>
+    <video height="300px" width="500px" controls autoplay muted loop title="Multiple Sources Video">
+        <!-- The <source> tag allows you to specify multiple video formats for better compatibility. -->
+        <source src="https://videos.pexels.com/video-files/19026925/19026925-uhd_2560_1440_25fps.mp4" type="video/mp4">
+        <source src="https://videos.pexels.com/video-files/28728787/12464789_360_640_30fps.mp4" type="video/webm">
+        Your browser does not support the <code>video</code> tag.
+    </video>
+
+    <p><b>Tip:</b> Always include multiple video formats (e.g., MP4, WebM) to ensure compatibility across different browsers.</p>
+
+    <hr>
+
+    <!-- AUDIO SECTION -->
+    <h2>Audio Example</h2>
+    <!-- The <audio> tag is used to embed audio files. It requires a closing tag. -->
+    <audio 
+        src="/resources/audio/406921__kyles__speaker-voice-prerecorded-ad-loop-for-music-player-mp3-mp4-formats-near-market-entebbe-uganda-africa-2016.wav" 
+        controls 
+        autoplay 
+        loop 
+        muted
+        title="Audio Example">
+        Your browser does not support the <code>audio</code> tag.
+    </audio>
+    <!-- Attributes:
+         - src: Specifies the audio source (URL or file path).
+         - controls: Displays play/pause buttons and other audio controls.
+         - autoplay: Starts playing the audio automatically.
+         - muted: Mutes the audio by default.
+         - loop: Repeats the audio in a loop.
+         - title: Provides additional information when hovering over the audio player.
+    -->
+
+    <p><b>Alternate Way to Include Multiple Audio Sources:</b></p>
+    <audio controls autoplay loop muted title="Multiple Sources Audio">
+        <source src="/resources/audio/audio-sample.mp3" type="audio/mpeg">
+        <source src="/resources/audio/audio-sample.ogg" type="audio/ogg">
+        Your browser does not support the <code>audio</code> tag.
+    </audio>
+
+    <p><b>Tip:</b> Always include multiple audio formats (e.g., MP3, OGG) to ensure compatibility across different browsers.</p>
+
+</body>
+</html>
