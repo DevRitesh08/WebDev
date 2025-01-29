@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables and forms </title>
+</head>
+<body>
+
+    <!-- Table -->
+
+
+    <!-- Creating a table with inline attributes -->
+    <table border="1" cellspacing="0" cellpadding="10" bgcolor="lightblue" width="80%" align="center">
+        <!-- Table header row -->
+        <tr>
+            <th>Sr. No</th> <!-- Column for serial number -->
+            <th>Subject 1</th>
+            <th>Subject 2</th>
+            <th>Subject 3</th>
+            <th>Subject 4</th>
+        </tr>
+
+        <!-- First data row demonstrating colspan -->
+        <tr>
+            <td>1</td>
+            <td colspan="2" align="center">English</td> <!-- Merges two cells for Subject 1 and 2 -->
+            <td align="center">Biology</td>
+            <td align="center">OOPs</td>
+        </tr>
+
+        <!-- Second data row -->
+        <tr>
+            <td>2</td>
+            <td align="center">OOPs</td>
+            <td align="center">Maths</td>
+            <td align="center">Biology</td>
+            <td align="center">English</td>
+        </tr>
+
+        <!-- Third data row demonstrating rowspan -->
+        <tr>
+            <td>3</td>
+            <td align="center">Maths</td>
+            <td align="center">English</td>
+            <td align="center">OOPs</td>
+            <td rowspan="2" align="center">Biology</td> <!-- Merges the Biology cell vertically -->
+        </tr>
+
+        <!-- Fourth data row -->
+        <tr>
+            <td>4</td>
+            <td align="center">OOPs</td>
+            <td align="center">Biology</td>
+            <td align="center">Maths</td>
+        </tr>
+    </table>
+
+
+    <!-- Forms -->
+     
+     <form >
+        <fieldset>
+            <legend>USER DETAILS !!</legend>
+            <label for="Name"> Enter your name : </label>
+            <input type="text" id="Name" name="Name"><br>
+            <br>
+            <label for="Address"> Please enter your address : </label>
+            <textarea  rows="3" cols="15" id="Address"></textarea>
+            <br>
+            <label for="dob"> DOB: </label>
+            <input type="date" id="dob" name="Userdob">
+            <br>
+            <label for="Password"> Enter your password : </label>
+            <input type="password" id="Password" name="UserPassword">
+            <br>
+            Select your gender :
+            <br>
+            <label for="male"> Male </label>
+            <input type="radio" id="male" name="gender">
+            <br>
+            <label for="female" > Female </label>
+            <input type="radio" id="female" name="gender">
+            <br>
+            Select Favorite Hero :
+            <br>
+            <label for="Thor">Thor</label>
+            <input type="checkbox" id="Thor" name="hero">
+            <br>
+            <label for="Ironman">Ironman</label>
+            <input type="checkbox" id="Ironman" name="hero">
+            <br>
+            <label for="Hulk">Hulk</label>
+            <input type="checkbox" id="Hulk" name="hero">
+            <br>
+            <label for="CaptainAmerica">Captain America</label>
+            <input type="checkbox" id="CaptainAmerica" name="hero">
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+
+    </form>
+</body>
+</html>
