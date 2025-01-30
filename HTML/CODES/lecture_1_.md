@@ -27,6 +27,21 @@
 
 ![alt text](<Screenshot 2025-01-30 225252.png>)
 
+## Recommended Folder Structure
+
+1. Root Directory: Main folder containing all website files.
+2. HTML Files: Store main .html files at the root level for easy
+access.
+3. CSS Folder: Create a css/ folder for all Cascading Style
+Sheets.
+4. JS Folder: Use a scripts/ folder for JavaScript files.
+5. Images Folder: Store images in an images/ or images/
+folder.
+6. Assets: Other assets like fonts can go in an assets/ folder.
+7. Sub-directories: For multi-page websites, use sub-folders to
+categorize content.
+
+
 ## **Body Section**
 
 The `<body>` contains the content displayed on the web page.
