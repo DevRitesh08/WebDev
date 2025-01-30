@@ -23,6 +23,10 @@
 
 ---
 
+## **HTML and Project Structure**
+
+![alt text](<Screenshot 2025-01-30 225252.png>)
+
 ## **Body Section**
 
 The `<body>` contains the content displayed on the web page.

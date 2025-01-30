@@ -46,12 +46,14 @@
     <h2>Video Examples</h2>
     <!-- The <video> tag is used to embed videos. It requires a closing tag. -->
     <video 
+        poster="https://images.unsplash.com/photo-1454486837617-ce8e1ba5ebfe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGFuY2luZ3xlbnwwfHwwfHx8MA%3D%3D" 
         src="https://videos.pexels.com/video-files/30290425/12984919_1920_1080_25fps.mp4" 
         height="300px" 
         width="500px" 
         controls 
-        autoplay 
-        muted
+        <!-- autoplay -->
+        <!--  poster only works when autoplay doesn't work -->
+        muted 
         loop 
         title="Ferris Wheel Video">
         Your browser does not support the <code>video</code> tag.
@@ -82,7 +84,7 @@
     <h2>Audio Example</h2>
     <!-- The <audio> tag is used to embed audio files. It requires a closing tag. -->
     <audio 
-        src="/resources/audio/406921__kyles__speaker-voice-prerecorded-ad-loop-for-music-player-mp3-mp4-formats-near-market-entebbe-uganda-africa-2016.wav" 
+        src="https://assets.mixkit.co/active_storage/sfx/2169/2169-preview.mp3" 
         controls 
         autoplay 
         loop 
@@ -101,8 +103,8 @@
 
     <p><b>Alternate Way to Include Multiple Audio Sources:</b></p>
     <audio controls autoplay loop muted title="Multiple Sources Audio">
-        <source src="/resources/audio/audio-sample.mp3" type="audio/mpeg">
-        <source src="/resources/audio/audio-sample.ogg" type="audio/ogg">
+        <source src="https://assets.mixkit.co/active_storage/sfx/2169/2169-preview.mp3" type="audio/mpeg">
+        <source src="https://assets.mixkit.co/active_storage/sfx/2169/2169-preview.mp3" type="audio/ogg">
         Your browser does not support the <code>audio</code> tag.
     </audio>
 
