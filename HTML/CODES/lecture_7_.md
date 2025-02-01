@@ -14,6 +14,10 @@ Tables are used to organize data in rows and columns.
   - `bgcolor`: Adds a background color to the table.
   - `align`: Aligns the table (`left`, `center`, `right`).
   - `width`: Specifies the width of the table.
+  - `caption`:  Provides a title or description for a table.
+    - Must be inserted immediately after the &lt;table&gt; opening tag.
+    - Centered above the table by default.
+    - Helps screen readers understand the table's purpose.
 - **Example**:
 
   ```html
@@ -221,6 +225,10 @@ Forms allow user input to be collected and submitted to a server.
   <label for="male">Male</label>
   ```
 
+  ![alt text](image.png)
+
+  - here name for all radio buttons is same that means only one button can be selected .
+
 #### 6.2 `type="checkbox"`
 
 - **Description**: Allows selecting multiple options.
@@ -230,6 +238,12 @@ Forms allow user input to be collected and submitted to a server.
   <input type="checkbox" id="thor" name="hero" value="Thor">
   <label for="thor">Thor</label>
   ```
+
+  ![alt text](image-1.png)
+
+  #### 6.3 `type="select"`
+
+  ![alt text](image-2.png)
 
 ---
 
