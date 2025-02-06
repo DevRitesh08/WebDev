@@ -1,0 +1,76 @@
+<!-- Ways to include css -->
+
+<!-- 1. Inline css -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline css</title>
+</head>
+<body>
+    <h1>inline css</h1>
+    <p style="color: crimson; background-color: aquamarine;" >this is inline css</p>
+    <!-- use " ; " to separate the properties (color, background-color) and " : " to separate the property and value (crimson, aquamarine)  -->
+    
+</body>
+</html>
+
+
+<!-- 2. Internal css -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        /* " .class_name " is used to define the style for the class. */
+        /* #id_name is used to define the style for the id. */ 
+
+        .para_one{
+            color: green;     
+            font-size: 18px;
+            background-color: yellow;
+            border: 5px solid gray;
+        }
+        .para_two{
+            color: red;
+            font-size: 20px;
+            background-color: blue;
+            border: 5px solid black;
+        }
+        .para_three{
+            color: blue;
+            font-size: 22px;
+            background-color: green;
+            border: 5px solid red;
+        }
+    </style>
+    title>Internal css</title>
+</head>
+<body>
+    <h1>internal css</h1>
+    <p class="para_one">This is internal CSS para_one.</p>
+    <p class="para_two">This is internal CSS para_two .</p>
+    <p class="para_three">This is internal CSS para_three .</p>
+</body>
+</html>
+
+
+<!-- 3. External css -->
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External css</title>
+    <link rel="stylesheet" href="/CSS/Basics_1_/Basics_1_.css">
+ </head>
+ <body>
+    <h1>External css</h1>
+    <p>This is external css.</p>
+    
+ </body>
+ </html> -->
