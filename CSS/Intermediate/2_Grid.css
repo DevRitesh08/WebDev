@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    }
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 25% 25% 25%;
+    align-items: center;
+    justify-items: center;
+    border: 5px solid palevioletred;
+    align-content: end;
+    justify-content: end;
+    justify-content: space-between;
+}
+
+.elem{
+    width: 130px;
+    height: 130px;
+    background-color: red;
+    border: 10px solid black;
+    border: black 1px solid;
+    }

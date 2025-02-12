@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    }
+
+#box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    justify-content: space-evenly;
+    
+    flex-direction: column;
+
+}
+
+#item1 {
+    width: 120px;
+    height: 120px;
+    background-color: green;
+
+}
+
+#item2 {
+    width: 120px;
+    height: 120px;
+    background-color: blue;
+
+}
+
+#item3 {
+    width: 120px;
+    height: 120px;
+    background-color: palevioletred;
+
+}
+

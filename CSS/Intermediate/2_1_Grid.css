@@ -1,0 +1,8 @@
+#nav{
+    display: grid;
+    /* background-color: red; */
+    grid-template-columns: 60% 8% 8% 8% 10% 8%;
+    grid-template-rows: 100%;
+    align-items: center;
+
+}

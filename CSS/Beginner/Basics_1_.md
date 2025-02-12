@@ -36,6 +36,7 @@ CSS is written inside a `<style>` tag within the `<head>` section of the HTML do
 
   - Styles are centralized within the same file.
   - Good for single-page websites.
+  - Id and Classes can be used in internal style sheets .
 
 - Disadvantages:
 
@@ -49,14 +50,18 @@ CSS is written inside a `<style>` tag within the `<head>` section of the HTML do
 <html>
 <head>
     <style>
-        p {
+        .para_one {
             color: green;
             font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <p>This is internal CSS.</p>
+    <p class = "para_one">This is paragraph one</p>
+    <p>This is paragraph two</p>
+    <p>This is paragraph three</p>
+</body>
+</body>
 </body>
 </html>
 ```
@@ -68,7 +73,7 @@ For styling a single document without affecting others.
 
 ## 3. **External CSS**  
 
-CSS is written in a separate `.css` file and linked to the HTML file using the `<link>` tag , The link element should be placed within the head of the html .
+CSS is written in a separate `.css` file and linked to the HTML file using the `<link>` tag , The link element should be placed within every page and there too in the head of the html .
 
 - Advantages:
 
@@ -121,3 +126,17 @@ You can also import one CSS file into another using `@import`.
 ```
 
 ---
+
+## NOTE for priority
+
+- Same Level:
+    Both internal CSS (inside a `<style>` tag) and external CSS (in a separate file) are at the same level. They both come from you, the developer.
+
+- Order Matters:
+    If two CSS rules are equally specific (they target the same element in the same way), then the rule that is written later in your HTML file will be used.
+
+- Example Simplified:
+    Imagine you write some styles inside a `<style>` tag and then later add a link to an external CSS file. If both have a rule for a `<p>` element, the rule in the external CSS file (which comes later) will win.
+
+- Key Point:
+    It's not that external CSS is always stronger than internal CSS. It’s just that if you write your CSS in a specific order (internal first, then external), the external CSS can override the internal CSS when they are otherwise equal.
