@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Tables and forms </title>
+    <!-- to add properties to table like border we can aslo use style tag -->
+     <style>
+        table,td,th{
+            border: 2px solid black;
+            text-align: center;
+            border-collapse: collapse;
+            /* border collapse will eliminate the double border */
+        }
+     </style>
 </head>
 <body>
 
@@ -11,7 +20,35 @@
 
 
     <!-- Creating a table with inline attributes -->
-    <table border="1" cellspacing="0" cellpadding="10" bgcolor="lightblue" width="80%" align="center">
+    <table  border="1" cellspacing="0" cellpadding="10" bgcolor="lightblue" width="80%" align="center">
+        
+
+        <!-- helps to style particular columns group -->
+        <!-- <colgroup>
+            <col span="1" style="background-color: red;">
+            <col span="2" style="background-color: palevioletred;">
+            <col span="1" style="background-color: fuchsia">
+            <col span="1" style="background-color: yellow">
+        </colgroup> -->
+        <!-- if we want to skip a column without styling that too we have to  firstly span to that (no need to do anything) now make a new span tag and style rest , ex if have to skip first one  and rest should be red then do this
+         -->
+        <!-- <colgroup>
+            <col span="1">
+            <col span="4" style="background-color: red;">
+        </colgroup> -->
+
+        <!-- find how to style particular row group -->
+    
+
+        <!-- Hiding a column in a table  (example lets hide column 4 - subject 3)-->
+         <colgroup>
+            <col span="3" >
+            <col span="1" style="visibility: collapse;">
+        </colgroup>
+
+        <!-- Table name is given by using caption tag -->
+        <caption><strong>Time Table</strong> </caption>
+
         <!-- Table header row -->
         <tr>
             <th>Sr. No</th> <!-- Column for serial number -->

@@ -18,6 +18,8 @@ Tables are used to organize data in rows and columns.
     - Must be inserted immediately after the &lt;table&gt; opening tag.
     - Centered above the table by default.
     - Helps screen readers understand the table's purpose.
+  - colspan is used to expand (or span) the rows as the direction of expansion is direction of   column so it is known as colspan .
+  - rowspan is used to expand (or span) the columns as the direction of expansion is direction of rows so it is known as rowspan .
 - **Example**:
 
   ```html
