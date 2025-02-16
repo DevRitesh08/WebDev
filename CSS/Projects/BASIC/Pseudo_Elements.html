@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements Showcase</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* ::first-line - Style first line of the paragraph */
+        .first-line-example::first-line {
+            font-weight: bold;
+            color: blue;
+            font-size: 1.2em;
+        }
+
+        /* ::first-letter - Style first letter like a drop cap */
+        .first-letter-example::first-letter {
+            font-size: 3em;
+            font-weight: bold;
+            color: red;
+            float: left;
+            margin-right: 10px;
+        }
+
+        /* ::before & ::after - Add decorative icons */
+        .before-after-example::before {
+            content: "🔥 ";
+            font-size: 1.2em;
+        }
+
+        .before-after-example::after {
+            content: " 🚀";
+            font-size: 1.2em;
+        }
+
+        /* ::marker - Customize list bullets */
+        .styled-list li::marker {
+            color: red;
+            font-size: 1.5em;
+            content: "✅ ";
+        }
+
+        /* ::selection - Change highlight color */
+        .select-text::selection {
+            background: yellow;
+            color: black;
+        }
+
+        /* Blockquote styling with ::before & ::after */
+        blockquote {
+            font-style: italic;
+            color: #555;
+            padding: 10px;
+            border-left: 4px solid #888;
+            margin: 20px 0;
+        }
+
+        blockquote::before {
+            content: "“";
+            font-size: 2em;
+            color: gray;
+        }
+
+        blockquote::after {
+            content: "”";
+            font-size: 2em;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Pseudo-Elements Showcase</h1>
+
+    <h2>::first-line Example</h2>
+    <p class="first-line-example">
+        This is a long paragraph. The first line of this paragraph is styled differently to grab attention. This effect is useful in articles, blogs, and newspapers.
+    </p>
+
+    <h2>::first-letter Example</h2>
+    <p class="first-letter-example">
+        This paragraph has a decorative first letter styled as a drop cap, often seen in magazines and books.
+    </p>
+
+    <h2>::before & ::after Example</h2>
+    <p class="before-after-example">
+        This text has additional content added before and after it using pseudo-elements.
+    </p>
+
+    <h2>::marker Example</h2>
+    <ul class="styled-list">
+        <li>Custom bullet 1</li>
+        <li>Custom bullet 2</li>
+        <li>Custom bullet 3</li>
+    </ul>
+
+    <h2>::selection Example</h2>
+    <p class="select-text">
+        Try selecting this text to see the custom highlight effect.
+    </p>
+
+    <h2>Blockquote with ::before & ::after</h2>
+    <blockquote>
+        Be yourself; everyone else is already taken.
+    </blockquote>
+
+</body>
+</html>

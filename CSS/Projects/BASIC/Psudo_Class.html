@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-Class Examples</title>
+    <style>
+        /* 🔹 Hover Effect */
+        .hover-button:hover {
+            background-color: black;
+            color: white;
+            transform: scale(1.1); /* ⏫ Enlarges the button slightly */
+            transition: 0.3s; /* ⏳ Smooth effect over 0.3 seconds */
+        }
+
+        /* 🔹 Focus Effect */
+        input:focus {
+            border: 2px solid green;
+            outline: none; /* 🚫 Removes default blue outline */
+            background-color: #f0fff0;
+        }
+
+        /* 🔹 Active Effect */
+        .click-button:active {
+            background-color: darkred;
+            transform: scale(0.95); /* ⬇ Shrinks button slightly when clicked */
+        }
+
+        /* 🔹 Visited Link */
+        a:visited {
+            color: purple;
+        }
+
+        /* 🔹 First-Child */
+        .text-container p:first-child {
+            font-weight: bold;
+            color: darkblue;
+        }
+
+        /* 🔹 Last-Child */
+        ul li:last-child {
+            color: red;
+            font-style: italic;
+        }
+
+        /* 🔹 nth-child (Alternating Table Rows) */
+        table tr:nth-child(even) {
+            background-color: #978686;
+        }
+
+        /* 🔹 General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        button, input, a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            cursor: pointer; /* 🖱️ Shows a hand cursor for buttons */
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px; /* 📏 Adds space above the table */
+        }
+        td {
+            padding: 8px;
+            border: 1px solid black;
+        }
+
+        .child p:nth-child(even)
+        {
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS Pseudo-Class Examples</h2>
+
+    <!-- 🔹 Hover Effect -->
+    <button class="hover-button">Hover Over Me</button>
+
+    <!-- 🔹 Focus Effect -->
+    <input type="text" placeholder="Click to focus">
+
+    <!-- 🔹 Active Effect -->
+    <button class="click-button">Click Me</button>
+
+    <!-- 🔹 Visited Link -->
+    <a href="https://www.example.com" target="_blank">Visited Link Example</a>
+
+    <!-- 🔹 First-Child Example -->
+    <div class="text-container">
+        <p>I am the first paragraph (Styled).</p>
+        <p>I am another paragraph.</p>
+    </div>
+
+    <!-- 🔹 Last-Child Example -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Last Item (Styled Red)</li>
+    </ul>
+
+    <!-- 🔹 nth-child Example (Table) -->
+    <table>
+        <tr><td>Row 1</td></tr>
+        <tr><td>Row 2 (Even - Gray)</td></tr>
+        <tr><td>Row 3</td></tr>
+        <tr><td>Row 4 (Even - Gray)</td></tr>
+    </table>
+
+    <section class="child">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, nesciunt.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, nesciunt.</p>
+    </section>
+
+</body>
+</html>

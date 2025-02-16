@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        p {
+            display: inline;
+        }
+
+        span{
+            display: block;
+        }
+        .inl{
+        display: inline-block;
+        width: 100px;
+        height: 10px;
+    }
+    
+    .hide{
+        display: none;
+    }
+    </style>
+    
+</head>
+<body>
+    <!-- display -->
+    
+    <!-- p is a block element by default -->
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus iste dolorum obcaecati recusandae, voluptates officiis.</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+     <hr>
+    <!-- span tag is inline by default -->
+     <span>Lorem ipsum dolor sit amet.</span>
+     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, sapiente.</span>
+
+     <!-- inline block -->
+      <section class="inl">
+        <p style="background-color: orange;">Lorem ipsum dolor sit amet.</p>
+        <p style="background-color: aqua;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, odio!</p>
+      </section>
+
+        <!-- hidden -->
+      <section class="hide">
+        <p>this is none attribute in display</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsum natus molestiae velit ipsam! Veritatis.</p>
+      </section>
+        
+</body>
+</html>
