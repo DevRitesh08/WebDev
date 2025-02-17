@@ -4,6 +4,10 @@ CSS **selectors** are patterns used to select and style specific HTML elements. 
 
 ---
 
+## **Priority of selectors :**
+
+ -Tag selector < Class selector < Id selector < Inline CSS < !important (can be placed inside any selector - BUT DON'T USE --> BAD PRACTICE )
+
 ## **Types of CSS Selectors**
 
 ## **1. Universal Selector (`*`)**
