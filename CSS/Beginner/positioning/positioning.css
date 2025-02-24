@@ -1,0 +1,46 @@
+/* static positioning
+
+.static_P{
+     position: static; 
+    /* no impact even if attributes like top , bottom ,left and right are used 
+} */
+
+/* relative positioning */
+/* 
+.relative_P{
+    position: relative;
+    left:40px;
+    top: 20px;
+}
+
+<h1>Positioning</h1>
+    <h2>static positioning</h2>
+    <div class="static_P">
+        <p>in static positionic no change in position happens , it is default positioning .</p>
+    </div>
+    <h2>relative positioning</h2>
+    <div class="relative_P">
+        <p>
+            position of content changes by using left , right , top and bottom properties . 
+        </p>
+    </div> */ 
+
+.box{
+    /* position: relative; */
+    width: 900px;
+    height: 600px;
+    background-color: wheat;
+    border: 3px solid black;
+}
+
+div{
+    border: 1px solid aqua;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+}
+.box1{
+    position: relative;
+    top: 50px ;
+}
