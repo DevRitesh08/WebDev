@@ -1,0 +1,34 @@
+section{
+    margin-top : 100px;
+}
+
+div{
+    width :200px;
+    height : 50px;
+    text-align: center;
+    background-color: #7aa874;
+    border: 2px solid black;
+    margin : 10px ;
+}
+
+div:nth-of-type(2n){
+    background-color: #f7db6a;
+}
+div:nth-of-type(3n){
+    background-color: #ebb02d;
+}
+
+#part1{
+    transform: rotate(45deg)
+}
+
+#part2{
+    transform: scale(1.15);
+}
+#part3{
+    transform : translate(200px,35px) ;
+    /* can also use negative pixels for opposite direction  */
+}
+#part4{
+    transform: skew(30deg) translate(40px);
+}

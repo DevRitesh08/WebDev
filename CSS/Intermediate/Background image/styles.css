@@ -1,0 +1,13 @@
+div{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    background-image: url('https://images.unsplash.com/photo-1635805737707-575885ab0820?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFydmVsfGVufDB8fDB8fHww');
+    background-size: contain; 
+    /* if image not fit then to fill the space we just repeat the image */
+    background-size: cover; 
+    /* here image is croed in scaled to fit the space */
+    background-size: auto 150%;
+   
+    
+}

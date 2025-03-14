@@ -1,0 +1,21 @@
+div{
+    width : 100px;
+    height : 100px;
+    background-color : rgb(109, 192, 14);
+    border: 2px solid black;
+    /* transition-duration: 1s; */
+    /* transition-delay: 0.5s; */
+    transition: 1s ease-in-out 0.2s;
+    /* sets the top and bottom margins to 50px and the left and right margins to auto, which centers the div horizontally within its container. */
+    margin : 50px auto;
+    
+}
+
+div:hover{
+    width : 200px;
+    height : 200px;
+    background-color : blue;
+    border-radius: 50%;
+    margin-top: 500px;
+    
+}
