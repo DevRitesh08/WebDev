@@ -3,15 +3,81 @@
     height:400px;
     background-color: wheat;
     display: grid;
+    /* grid-template-columns: 150px 150px 150px 150px;
+    grid-template-rows: 100px 100px 100px 100px; */
+
+    /* Auto */
+
+    /* grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto; */
+    /* this will create 4 columns and 4 rows of equal length respectively */
+
+
+    /* Repeat */
+
+    grid-template-rows: repeat(4 , 1fr);
+    grid-template-columns: repeat(4 , 1fr);
+
+
+    /* Gap */
+
+    /* adds gap between the lines can also use row-gap and column gap to give gap separately  */
+    /* grid-gap: 5px 5px; */
+
+
+    /* Common Properties */
+
+    /* justify-items: center; */
+    /* align-items: center; */
+    /* or just use */
+    /* place-items: center; */
 
 }
 
 
 .item{
+    /* if we don't hardcode the width and height of grid elemets than they will occupy the whole cell */
     width: 50px;
     height: 50px;
     background-color: greenyellow;
     border: 2px solid black;
     text-align: center;
     font-size: 2em;
+}
+
+#one{
+
+    /* Grid columns */
+
+    grid-column-start: 1 ;
+    grid-column-end: 4 ;
+    
+    /* or just do it like this */
+    /* grid-column: 1/4; */
+
+    /* or like this */
+    /* grid-column: 1/span 3; */
+
+
+}
+
+
+#two{
+
+    /* Grid row */
+
+    grid-row-start: 1 ; 
+    grid-row-end: 3 ; 
+    
+     /* or just do it like this  */
+    /* grid-row: 1/4; */
+
+     /* or like this  */
+     /* grid-row: 1/span 3; */
+
+
+     
+    /* Common Properties */
+    place-self: end;
+
 }
