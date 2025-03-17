@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- error in static position of middle div is changing but it should't -->
+    <h1>Static Demo</h1>
+    <div></div>
+    <div id = "static">no change in my positioning !!</div>
+    <div></div>
+
+
+    <h1>Relative Demo</h1>
+    <h3>
+        the offset is relative to itself based on the values of top , right , bottom and left . 
+    </h3>
+    <div></div>
+    <div id = "relative">space is still left for me in my relative section !!</div>
+    <div></div>
+    
+
+
+    <h1>Absolute Demo</h1>
+    <h3>
+        <p>
+              the elementt is removed from the normal flow of the document and no space is created for the element in the page layout . 
+        </p>
+        <p>
+            it is positioned relative to its nearest positioned ancestor . if any otherwise , it is placed relative to the initial containing block .
+        </p> 
+
+    </h3>
+    <div></div>
+    <div id = "absolute">no position is left for me in my absolute section !!</div>
+    <div></div>
+
+
+    <h1>Fixed Demo</h1>
+    <div></div>
+    <div id = "fixed">Fixed block (remains constant also on scrolling ) !!</div>
+    <div></div>
+
+    <!-- do for sticky positioning -->
+</body>
+</html>

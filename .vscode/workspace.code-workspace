@@ -1,0 +1,35 @@
+{
+    "folders": [
+        {
+            "name": "HTML",
+            "path": "../HTML"
+        },
+        {
+            "name": "CSS",
+            "path": "../CSS"
+        },
+        {
+            "name": "JAVASCRIPT",
+            "path": "../JAVASCRIPT"
+        },
+        {
+            "name": "PROJECTS",
+            "path": "../PROJECTS"
+        },
+        {
+            "name": "resources",
+            "path": "../resources"
+        },
+        {
+            "name": "Sigma",
+            "path": "../Sigma"
+        }
+    ],
+    "settings": {
+        "livePreview.defaultPreviewPath": "/1.website/index.html",
+        "explorer.sortOrder": "type",
+        "explorer.sortDirection": "ascending",
+        "explorer.compactFolders": false,
+        "workbench.explorer.openEditors.sortOrder": "editorOrder"
+    }
+} 

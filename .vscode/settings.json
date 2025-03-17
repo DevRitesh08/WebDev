@@ -1,6 +1,40 @@
 {
     "livePreview.defaultPreviewPath": "/1.website/index.html",
-    "explorer.sortOrder": "modified",
-    "explorer.sortDirection": "decending"
-  }
+    "explorer.sortOrder": "manual",
+    "explorer.sortDirection": "ascending",
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.sortOrderLexicographicOptions": "unicode",
+    "explorer.experimental.fileNesting.enabled": true,
+    "explorer.experimental.fileNesting.patterns": {
+        "*.ts": "$(capture).js,$(capture).*.ts",
+        "*.js": "$(capture).js.map,$(capture).min.js,$(capture).d.ts"
+    },
+    "workbench.tree.indent": 20,
+    "workbench.tree.renderIndentGuides": "always",
+    "explorer.compactFolders": false,
+    "workbench.explorer.openEditors.sortOrder": "editorOrder",
+    "explorer.excludeGitIgnore": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "explorer.fileNesting.patterns": {
+        "*.ts": "$(capture).js,$(capture).*.ts",
+        "*.js": "$(capture).js.map,$(capture).min.js,$(capture).d.ts"
+    },
+    "folders.order": [
+        "HTML",
+        "CSS",
+        "JAVASCRIPT",
+        "PROJECTS",
+        "resources",
+        ".vscode",
+        "Sigma"
+    ]
+}
   

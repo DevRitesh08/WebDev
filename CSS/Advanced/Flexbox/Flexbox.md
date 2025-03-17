@@ -196,7 +196,7 @@ Each flex item can be individually controlled using properties that dictate its 
 
 ### 4.6. `align-self`
 
-- **Purpose:** Overrides the container’s `align-items` value for individual flex items.
+- **Purpose:** Overrides the container's `align-items` value for individual flex items.
 - **Values:** Similar to `align-items` (e.g., `center`, `flex-start`).
 - **Example:**
 

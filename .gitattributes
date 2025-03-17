@@ -1,2 +1,9 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+HTML/ order=10
+CSS/ order=20
+JAVASCRIPT/ order=30
+PROJECTS/ order=40
+resources/ order=50
+.vscode/ order=60

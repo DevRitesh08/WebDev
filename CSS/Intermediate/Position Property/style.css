@@ -1,0 +1,57 @@
+/* Static demo */
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    text-align: center;
+    border: 2px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+
+/* Static demo */
+#static{
+    background-color: rgb(255, 0, 179);
+    color: aliceblue;
+    position: static;
+    top: 100px;
+    bottom: 100px;
+    /* top and right properties removed as they have no effect on static positioning */
+}
+ 
+
+/* Relative demo */
+
+#relative{
+    /* the offset is relative to itself based on the values of top , right , bottom and left . */
+    background-color: rgb(255, 0, 179);
+    position: relative;
+    color: aliceblue;
+    top: 100px;
+    left: 100px;    
+}
+
+
+#absolute{
+    /* as its parent is body so it is positioned according to it  */
+    background-color: rgb(255, 0, 178);
+    position: absolute;
+    color: aliceblue;
+    top: 250px;
+    left: 250px; 
+}
+
+#fixed{
+    /* Fixed position stays in place even when scrolling */
+    background-color: rgb(255, 0, 178);
+    position: fixed;
+    color: aliceblue;
+    top: 250px;
+    left: 250px; 
+}
+
+
+
+
+
