@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* px */
+
+
+/* 
+#parent{
+    height: 800px;
+    width: 800px;
+    background-color: wheat;
+}
+
+#child{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+} */
+
+/* it is not good to provide units in pixels as they are fixed and do not change as the screen size changes  */
+
+
+/* % */
+
+
+#parent{
+    height: 800px;
+    width: 800px;
+    /* or */
+    /* height: 80%;
+    width: 80%; */
+    background-color: wheat;
+}
+
+#child{
+    /* these height and width are 50% of its parent element */
+    height: 50%;
+    width: 50%;
+    background-color: aquamarine;
+}
+
+
+/* vw and vh */
+
+/* vmax and vmin */
+
+/* em and rem */
