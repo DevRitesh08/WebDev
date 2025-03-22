@@ -133,4 +133,32 @@ html , body {
     height: 90%; 
     object-fit: cover;
 }
- 
+
+#black-circle{ 
+    height: 180px;
+    width: 180px;
+    background-color: rgb(26, 26, 26 );
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+    position: absolute;
+    right: -17%;
+    top: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#black-circle h5{ 
+    font-size: 26px;
+    font-weight: 500;
+}
+
+#rotated{
+    position: absolute;
+    left: -10%;
+    bottom: 5%;
+    rotate: -90deg;
+    transform-origin: 0 0;
+    font-size: 25px;
+    font-weight: 500;
+} 

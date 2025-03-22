@@ -89,31 +89,52 @@ html , body {
     display: flex;
     /* flex-wrap: nowrap; */
     overflow-x: auto;
+    /* it changes the scrollbar from whole page to this div only */
 }
 
 /*hiding the scrollbar*/
 #text-content::-webkit-scrollbar{
    /* display: none; *//*not needed here*/
    background-color: transparent;
-   height: 9px;
+   height: 7px;
 }
 
 #text-content::-webkit-scrollbar-thumb{
    background-color: orangered;
-}
+} 
 
 .elem{
     flex-shrink: 0;
     height: 100%;/*means equal to its parent div text-content*/
-    width: 50%;
+    width: 65%;
     /* background-color: greenyellow; */
     display: flex;
     align-items: center;
     justify-content: center;
 
-}
+} 
 
 .elem h1{
     font-size: 130px;
     font-weight: 300;
+} 
+
+#image-content{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    /* background-color: rebeccapurple; */
+    overflow-x: auto;
+}
+
+#image-content img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 35%;
+}
+
+#image-content::-webkit-scrollbar{
+    display: none;
 }
