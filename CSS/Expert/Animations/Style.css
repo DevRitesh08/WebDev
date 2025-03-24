@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.box1{
+    color: white;
+    font-size: 200px;
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    position: absolute; /* or relative */
+    animation-name: ani;
+    animation-duration: 3s;
+    /*Above two properties are must*/
+    animation-delay: 2s;
+    align-self: center;
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes ani {
+    from{
+        left: 0;
+        background-color: blueviolet;
+        rotate: 0;
+        border-radius: 0;
+
+    }
+
+    to{
+        left: 80%;
+        background-color: lime;
+        rotate: 720deg;
+        border-radius: 50%;
+    }
+    
+}
+
+/* The above method (from ==> to) is used when we only have the starting and ending position , hence it can't deal more than two positions !!! */
+
+/* For more than 2 position we can use % like this : */
+/* 
+@keyframes ani {
+    0%{
+        left: 0;
+        background-color: blueviolet;
+        rotate: 0;
+        border-radius: 0;
+        bottom: 50%;
+
+    }
+
+    33%{
+        left: 85%;
+        background-color: palevioletred;
+        rotate: 720deg;
+        border-radius: 50%;
+        bottom: 30%;
+    }
+
+    67%{
+        left: 50%;
+        bottom: 10%;
+        rotate: -360deg;
+        background-color: rgb(62, 171, 179);
+        border-radius: 50%;
+    }
+
+    100%{
+        left: 0%;
+        bottom: 35%;
+        rotate: 0;
+        background-color: olive;
+        border-radius: 0;
+    }
+    
+} */
+
+.box2{
+    color: white;
+    font-size: 200px;
+    height: 300px;
+
+    width: 300px;
+    background-color: crimson;
+    position: absolute; /* or relative */
+    animation-name: ani;
+    animation-duration: 3s;
+    /*Above two properties are must*/
+    animation-delay: 4s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
