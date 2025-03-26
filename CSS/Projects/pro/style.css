@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+} 
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    /* background-color: blue; */ /*to understand that when we gave margin top to the element of main , then main also shifts or takes that margin top , this is a glitch in css , to overcome this we have to create a very small gap between the parent and its child . */
+    padding-top: 0.1px;
+    position: relative;
+    
+}
+
+#nav{
+    height: 10vh;
+    width: 100%;
+    /* background-color: brown; */
+    margin-top: 40px; 
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    
+}
+
+#nav h1{
+    /* background-color: yellow; */
+    width: 18%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    font-size: 55px;
+    letter-spacing: -1;
+
+}
+
+#nav h2{
+    /* background-color: yellow; */
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 26px;
+    font-weight: 600;
+    
+}
+
+#nav h2:nth-last-child(2){
+    /* background-color: yellow; */
+    width:29%;
+}
+#nav h2:nth-last-child(1){
+    /* background-color: yellow; */
+    width:10%;
+    /* background-color: pink; */
+}
+
+#center{
+    height: 90%;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    padding: 4.5vw;
+    position: relative;
+
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    /* background-color: orangered; */
+    position: relative;
+}
+
+#content video{
+    height: 100%;
+    width: 100%;
+   object-fit: cover;
+}
+
+#overlay{
+    height: 52%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    padding: 3vw;
+} 
+
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+#over1 h1{
+    font-family: monument;
+    font-size: 3.5vw;
+    color: white;
+    
+}
+
+#over1 h2{
+    font-size: 1vw;
+    padding: 2vw 2.2vw;
+    /* background-color: olive; */
+    border-radius: 50%;
+    border: 1.5px solid black;
+    color: white;
+    /* border-bottom: 5px solid white; */ /* not prefered */
+}
+
+#over2{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    padding: 1.5vw 0;
+}
+
+#over2 h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+#over2 img{
+    height: 3vw;
+}
+
+#scroll{
+    height: 40vw;
+    width: 100%;
+    /* background-color: red; */
+    /* padding: 1vw; */
+    white-space: nowrap;
+    /*can also do using flex*/
+    /* overflow-x: auto; */
+    overflow-x: hidden;/*as animation is applied*/
+    overflow-y: hidden;
+
+}
+
+
+.container{
+    height: 100%;
+    width: 110%;
+    /* background-color: rebeccapurple; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: scroll-ani;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroll img{
+    /* display: none; */
+    height: 95%;
+    border-radius: 50%;
+    width: 15%;
+    margin: 1vw;
+    object-fit: cover;
+    object-position: 30% 30%;
+
+}
+
+@keyframes scroll-ani {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+#alphabet{
+    height: 11vh;
+    width: 100%;
+    /* background-color: wheat; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#alphabet h5{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid black;
+    letter-spacing: 3px;
+    margin-right: 2vw;
+}
+
+#alphabet h6{
+    font-size: 1vw;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 3px;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    /* background-color: yellow; */
+    border: 2px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all ease;
+}
+
+#alphabet h6:hover:nth-child(2n){
+    font-size: 1.08vw;
+    font-weight: 500;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#alphabet h6:hover:nth-child(2n-1){
+    font-size: 1.08vw;
+    font-weight: 500;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+    background-color: wheat;
+}
+
+#page2-part1{
+    height: 100%;
+    width: 50%;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-color: orangered;
+}
+
+#page2-part2{
+    height: 100%;
+    width: 45%;
+    background-color: olive;
+}
