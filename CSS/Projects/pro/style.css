@@ -74,7 +74,7 @@ html, body{
     width: 100%;
     /* background-color: rebeccapurple; */
     padding: 4.5vw;
-    position: relative;
+    /* position: relative; */
 
 }
 
@@ -119,7 +119,7 @@ html, body{
     padding: 2vw 2.2vw;
     /* background-color: olive; */
     border-radius: 50%;
-    border: 1.5px solid black;
+    border: 1.5px solid white;
     color: white;
     /* border-bottom: 5px solid white; */ /* not prefered */
 }
@@ -143,7 +143,7 @@ html, body{
 }
 
 #scroll{
-    height: 40vw;
+    height: 40vh;
     width: 100%;
     /* background-color: red; */
     /* padding: 1vw; */
@@ -157,11 +157,11 @@ html, body{
 
 
 .container{
-    height: 100%;
-    width: 110%;
+    height: 79%;
+    width: 85%;
     /* background-color: rebeccapurple; */
     display: inline-block;
-    padding: 2vw;
+    padding: 1vw;
     animation-name: scroll-ani;
     animation-duration: 8s;
     animation-iteration-count: infinite;
@@ -173,7 +173,7 @@ html, body{
     height: 95%;
     border-radius: 50%;
     width: 15%;
-    margin: 1vw;
+    margin: 0vw 1vw;
     object-fit: cover;
     object-position: 30% 30%;
 
@@ -260,4 +260,11 @@ html, body{
     height: 100%;
     width: 45%;
     background-color: olive;
+}
+
+#page2-part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    background-color: powderblue;
 }
