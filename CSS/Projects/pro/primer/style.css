@@ -31,7 +31,12 @@ html, body{
     align-items: center;
 
     justify-content: space-between;
+    position: relative;
     
+}
+
+#nav h3 {
+    display: none;
 }
 
 #nav h1{
@@ -47,6 +52,27 @@ html, body{
 
 }
 
+#nav h1::after{
+   content: "©";
+    color: black;
+    font-weight: 400;
+    transform: scale(0.4);
+    position: absolute;
+    left: 13.5%;
+    top: 10%;
+}
+
+#nav h1::before{
+   content: "model management";
+    color: #666;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    transform: scale(0.3);
+    position: absolute;
+    left: -1%;
+    top: 43%;
+}
+
 #nav h2{
     /* background-color: yellow; */
     width: 20%;
@@ -58,13 +84,14 @@ html, body{
     font-size: 26px;
     font-weight: 600;
     
+    
 }
 
-#nav h2:nth-last-child(2){
+#nav h2:nth-last-child(3){
     /* background-color: yellow; */
     width:29%;
 }
-#nav h2:nth-last-child(1){
+#nav h2:nth-last-child(2){
     /* background-color: yellow; */
     width:10%;
     /* background-color: pink; */
@@ -164,7 +191,7 @@ html, body{
     width: 85%;
     /* background-color: rebeccapurple; */
     display: inline-block;
-    padding: 1vw;
+    padding: 5px 10px 10px 10px;
     animation-name: scroll-ani;
     animation-duration: 8s;
     animation-iteration-count: infinite;
@@ -183,14 +210,14 @@ html, body{
 }
 
 @keyframes scroll-ani {
-    from{
-        transform: translateX(0);
+    from {
+        transform: translateX(calc(0));
     }
-    to{
-        transform: translateX(-100%);
+    to {
+        transform: translateX(calc(-100% - 14px));
     }
-    
 }
+
 
 #alphabet{
     height: 11vh;
@@ -474,12 +501,14 @@ html, body{
 
 .marque{
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     margin-top: 5vw;
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
-    padding: 1vw;
+    padding: 0.8vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .marque h1{
@@ -489,13 +518,247 @@ html, body{
     font-weight: 900;
     -webkit-text-stroke: 2px black;
     color: transparent; 
-    letter-spacing: 2px ;
+    letter-spacing: 3px ;
     font-family: monument;
     margin-right: 16px;
+    animation-name: mar-ani;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mar-ani {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(calc(-100% - 20px));
+    }
 }
 
 .footer{
     width: 100%;
     height: 100%;
-    background-color: orangered;
+    /* background-color: orangered; */
+}
+
+
+@media (max-width: 600px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    
+#nav{
+    height: 7vh;
+    margin-top: 20px;
+    padding: 0 5vw;
+
+}
+
+#nav h3{
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+#nav h1{
+    /* background-color: yellow; */
+    width: 40%;
+    justify-content: flex-start;
+    font-size: 24px;
+
+}
+
+#nav h1::after{
+   display: none;
+}
+
+#nav h1::before{
+   display: none;
+}
+
+#nav h2{
+    display: none;
+    
+}
+
+#center{
+    height: 90%;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    padding: 4.5vw;
+    /* position: relative; */
+
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    /* background-color: orangered; */
+    position: relative;
+}
+
+#content video{
+    height: 50%;
+    width: 100%;
+   object-fit: cover;
+}
+
+
+
+
+#overlay{
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    letter-spacing: 3px;
+    top: 35%;
+    /* background-color: red; */
+    padding: 3vw;
+} 
+
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+#over1 h1{
+    font-family: monument;
+    font-size: 4.5vw;
+    color: white;
+    font-weight: 100;
+    
+}
+
+#over1 h2{
+    font-size: 3vw;
+    padding: 2vw 3.2vw;
+    /* background-color: olive; */
+    border-radius: 50%;
+    border: 1.5px solid white;
+    color: white;
+    /* border-bottom: 5px solid white; */ /* not prefered */
+}
+
+#over2{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    padding: 1.5vw 0;
+}
+
+#over2 h4{
+    font-size: 2.3vw;
+    font-weight: 500;
+}
+
+#over2 img{
+    height: 5vw;
+}
+
+
+
+#scroll{
+    height: 15vh;
+    width: 100%;
+    position: relative;
+    top: -80vw;
+    /* background-color: red; */
+    /* padding: 1vw; */
+    white-space: nowrap;
+    /*can also do using flex*/
+    /* overflow-x: auto; */
+    overflow-x: hidden;/*as animation is applied*/
+    overflow-y: hidden;
+    background-color: #f8f8f8;
+    font-family: monument;
+
+}
+
+
+.container{
+    height: 79%;
+    width: 85%;
+    /* background-color: rebeccapurple; */
+    display: inline-block;
+    padding: 5px 10px 10px 10px;
+    animation-name: scroll-ani;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#scroll img{
+    /* display: none; */
+    height: 95%;
+    border-radius: 50%;
+    width: 15%;
+    margin: 0vw 1vw;
+    object-fit: cover;
+    object-position: 30% 30%;
+
+}
+
+@keyframes scroll-ani {
+    from {
+        transform: translateX(calc(0));
+    }
+    to {
+        transform: translateX(calc(-100% - 14px));
+    }
+}
+
+
+#alphabet{
+    display: none;
+}
+
+
+#page2{
+    height: 30%;
+    width: 100%;
+    position: relative;
+    top: -85vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+    background-color: #f8f8f8;
+}
+
+#page2-part2 h2 {
+    font-size: 2.3vw;
+    font-weight: bolder;
+}
+
+#page2-part2 h5 {
+    font-size: 2vw;
+    font-weight: 600;
+    color: rgb(54, 51, 51);
+}
+
+#page2-part1{
+    margin-top: 16vw;
+    height: 140%;
+    width: 50%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1672857822094-4fb4cfe63866?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI5fHxmZW1hbGUlMjBtb2RlbCUyMHBvcnRyYWl0JTIwd2l0aCUyMGdyZXklMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: top;
+    /* background-color: orangered; */
+}
+
+
+#page2-part2 img{
+    margin-top: 13vw;
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+    /* background-color: powderblue; */
+}
+
 }
