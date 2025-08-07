@@ -192,10 +192,27 @@ html, body{
     /* background-color: rebeccapurple; */
     display: inline-block;
     padding: 5px 10px 10px 10px;
-    animation-name: scroll-ani;
+    /* animation-name: scroll-ani;
     animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+*/animation: scroll-ani 8s linear infinite;
+    animation-play-state: running;
+    /* animation-delay: 2s; */
+    /* animation-fill-mode: forwards; */
+    /* animation-direction: alternate; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-delay: 2s; */
+    /* animation-fill-mode: forwards; */
+} 
+
+@keyframes scroll-ani {
+    from {
+        transform: translateX(calc(0));
+    }
+    to {
+        transform: translateX(calc(-100% - 14px));
+    }
 }
 
 #scroll img{
@@ -209,14 +226,7 @@ html, body{
 
 }
 
-@keyframes scroll-ani {
-    from {
-        transform: translateX(calc(0));
-    }
-    to {
-        transform: translateX(calc(-100% - 14px));
-    }
-}
+
 
 
 #alphabet{
